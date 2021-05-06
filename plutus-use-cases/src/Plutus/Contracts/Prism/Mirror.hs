@@ -3,7 +3,6 @@
 {-# LANGUAGE DeriveGeneric      #-}
 {-# LANGUAGE DerivingStrategies #-}
 {-# LANGUAGE FlexibleContexts   #-}
-{-# LANGUAGE MonoLocalBinds     #-}
 {-# LANGUAGE NamedFieldPuns     #-}
 {-# LANGUAGE TemplateHaskell    #-}
 {-# LANGUAGE TypeApplications   #-}
@@ -61,7 +60,7 @@ mirror ::
     => Contract w s MirrorError ()
 mirror = do
     authority <- mapError SetupError $ CredentialAuthority . pubKeyHash <$> ownPubKey
-    forever $ (createTokens authority `select` revokeToken authority)
+    forever (createTokens authority `select` revokeToken authority)
 
 createTokens ::
     ( HasEndpoint "issue" CredentialOwnerReference s

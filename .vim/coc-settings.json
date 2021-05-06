@@ -1,0 +1,16 @@
+{
+  "languageserver": {
+    "haskell": {
+      "command": "haskell-language-server",
+      "args": ["--lsp", "--debug", "--logfile", "/tmp/hls.log"],
+      "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+      "filetypes": ["haskell", "lhaskell"],
+      "initializationOptions": {
+        "languageServerHaskell": {
+          "hlintOn": true,
+          "formattingProvider": "stylish-haskell"
+        }
+      }
+    }
+  }
+}
