@@ -10,6 +10,9 @@
       stackage = sources."stackage.nix";
     };
   }
+  # haskell-nix has to be used differently in flakes/no-flakes scenarios:
+  # - When imported from flakes, 'haskellNix.overlay' needs to be passed here.
+  # - When imported from default.nix without flakes, default to haskellNix.overlays
 , haskellNixOverlays ? haskellNix.overlays
 , checkMaterialization ? false
 , enableHaskellProfiling ? false
