@@ -22,7 +22,7 @@
     "chartist-plugin-tooltips": "^0.0.17",
     "jquery": "^3.6.0",
     "json-bigint": "^1.0.0",
-    "monaco-editor": "^0.21.0",
+    "monaco-editor": "^0.23.0",
     "monaco-editor-webpack-plugin": "^2.1.0",
     "monaco-emacs": "^0.2.2",
     "monaco-vim": "^0.1.13",
