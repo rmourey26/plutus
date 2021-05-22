@@ -26,7 +26,7 @@
     "nearley": "^2.19.1",
     "popper.js": "^1.14.4",
     "safe-eval": "^0.4.0",
-    "xhr2": "^0.1.4"
+    "xhr2": "^0.2.1"
   },
   "resolutions": {},
   "license": "Apache-2.0",
