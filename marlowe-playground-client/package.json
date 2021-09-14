@@ -13,7 +13,7 @@
     "start": "npm install && marlowe-playground-generate-purs && npm run purs:compile && npm run webpack:server"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.2",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bignumber": "^1.1.0",
     "blockly": "^4.20201217.0",
     "bootstrap": "^4.3.1",
