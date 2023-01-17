@@ -17,7 +17,7 @@ sphinxcontrib-plantuml==0.20.1
 sphinxcontrib-bibtex==2.2.0
 CommonMark==0.9.1
 docutils==0.16
-future==0.18.2
+future==0.18.3
 idna==2.9
 imagesize==1.2.0
 Jinja2==2.11.2
